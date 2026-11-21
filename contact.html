@@ -1,0 +1,212 @@
+<!-- contact.html — paste as the FULL file contents (same folder as index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1a2f">
+  <title>Contact, Locations &amp; Emergency Guidance | SmileCare</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+  <meta name="description" content="Find SmileCare contact information, dentist locations, emergency guidance and answers to common dental questions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+  <link rel="stylesheet" href="shared-sections.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pghero-section" aria-labelledby="cont-title">
+      <div class="pghero-inner">
+        <nav class="pghero-crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Contact</li>
+          </ol>
+        </nav>
+        <span class="pghero-badge">Here to help</span>
+        <h1 class="pghero-title" id="cont-title">Contact and locations</h1>
+        <p class="pghero-text">Review location information, read emergency guidance, or prepare a message draft for your own reference.</p>
+        <div class="pghero-actions">
+          <a class="hero-btn hero-btn-primary" href="book.html">Plan your visit</a>
+          <a class="hero-btn hero-btn-outline" href="#emergency">Emergency guidance</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact channels are shown only when verified clinic details are available. -->
+    <section class="cont-quick" aria-label="Contact details">
+      <div class="cont-container">
+        <ul class="cont-cards">
+          <li class="cont-card">
+            <span class="cont-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <h2 class="cont-card-title">Call us</h2>
+            <a class="cont-card-link" id="cont-phone" href="tel:+9234522115576">0345 2211576</a>
+            <p class="cont-card-note">Call during opening hours, Monday to Friday.</p>
+          </li>
+          <li class="cont-card">
+            <span class="cont-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+            <h2 class="cont-card-title">Email contact</h2>
+            <a class="cont-card-link" id="cont-email" href="mailto:smilecare@email.com">smilecare@email.com</a>
+            <p class="cont-card-note">For general questions and enquiries.</p>
+            <a class="cont-card-link" href="#cont-message">Go to message form</a>
+          </li>
+          <li class="cont-card">
+            <span class="cont-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <h2 class="cont-card-title">Opening hours</h2>
+            <p class="cont-card-link cont-card-plain" id="cont-hours">Monday–Friday, 8:00 AM–5:00 PM</p>
+            <p class="cont-card-note">Opening hours.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Emergency guidance: linked from contact.html#emergency -->
+    <section class="cont-emerg cont-anchor" id="emergency" aria-labelledby="cont-emerg-title">
+      <div class="cont-container">
+        <div class="cont-emerg-head">
+          <span class="cont-emerg-badge">Dental emergency</span>
+          <h2 class="cont-heading" id="cont-emerg-title">Emergency guidance</h2>
+          <p class="cont-lead">This is general information, not medical advice or a diagnosis. In a life-threatening emergency, call your local emergency number or go to the nearest hospital emergency department.</p>
+        </div>
+
+        <div class="cont-emerg-grid">
+          <div class="cont-emerg-card cont-emerg-urgent">
+            <h3 class="cont-emerg-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>Get urgent medical help straight away if</h3>
+            <ul class="cont-emerg-list">
+              <li>Swelling is spreading across your face or neck</li>
+              <li>You have trouble breathing or swallowing</li>
+              <li>Swelling comes with a fever and you feel very unwell</li>
+              <li>Bleeding does not stop after about 10 minutes of firm pressure</li>
+              <li>You had a serious injury to your head, face or jaw</li>
+            </ul>
+          </div>
+
+          <div class="cont-emerg-card">
+            <h3 class="cont-emerg-title"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>See a dentist as soon as possible for</h3>
+            <ul class="cont-emerg-list">
+              <li>Severe or getting-worse toothache</li>
+              <li>A tooth that has been knocked out</li>
+              <li>A broken or cracked tooth with pain</li>
+              <li>A lost filling or crown with pain or a sharp edge</li>
+              <li>A painful, swollen gum or abscess-like bump</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cont-firstaid">
+          <h3 class="cont-firstaid-title">General first-aid tips while you arrange care</h3>
+          <ul class="cont-firstaid-list">
+            <li><strong>Knocked-out adult tooth:</strong> hold it by the crown (the white part), not the root. If it is dirty, rinse it gently without scrubbing. Keep it moist (for example in milk) and get to a dentist urgently.</li>
+            <li><strong>Toothache:</strong> rinse your mouth with warm water and clean gently between teeth. For pain relief, follow the instructions on the product label or ask a pharmacist.</li>
+            <li><strong>Bleeding after injury:</strong> press firmly with a clean cloth or gauze.</li>
+            <li><strong>Broken tooth:</strong> rinse your mouth and keep any pieces. Do not chew on that side.</li>
+          </ul>
+        </div>
+
+        <p class="cont-lead cont-emergency-note">This page provides general guidance only. For urgent care, contact a licensed local clinic or emergency service directly.</p>
+      </div>
+    </section>
+
+    <!-- Locations: linked from contact.html#locations (cards built from the doctors array in data.js) -->
+    <section class="cont-loc cont-anchor" id="locations" aria-labelledby="cont-loc-title">
+      <div class="cont-container">
+        <h2 class="cont-heading cont-heading-center" id="cont-loc-title">Clinic locations</h2>
+        <p class="cont-lead cont-lead-center">Location and provider details are illustrative until confirmed directly with each clinic.</p>
+        <div class="cont-loc-grid" id="cont-loc-grid"></div>
+      </div>
+    </section>
+
+    <!-- Message form -->
+    <section class="cont-msg" aria-labelledby="cont-msg-title">
+      <div class="cont-container cont-msg-layout">
+        <div class="cont-msg-intro">
+          <h2 class="cont-heading" id="cont-msg-title">Prepare a message</h2>
+          <p class="cont-lead">Draft a question about treatments, appointments, or how SmileCare works. Your message stays in this browser and is not delivered to a clinic.</p>
+          <p class="cont-msg-note">Please do not share passwords, payment details, or sensitive medical information.</p>
+        </div>
+
+        <div class="cont-msg-box">
+          <form class="book-form" id="cont-form" novalidate>
+            <div class="book-grid">
+              <div class="book-field">
+                <label class="book-label" for="cont-name">Your name <span class="book-req" aria-hidden="true">*</span></label>
+                <input class="book-input" type="text" id="cont-name" autocomplete="name" required aria-describedby="cont-name-err">
+                <p class="book-error" id="cont-name-err" hidden></p>
+              </div>
+              <div class="book-field">
+                <label class="book-label" for="cont-email-input">Email <span class="book-req" aria-hidden="true">*</span></label>
+                <input class="book-input" type="email" id="cont-email-input" autocomplete="email" placeholder="name@example.com" required aria-describedby="cont-email-input-err">
+                <p class="book-error" id="cont-email-input-err" hidden></p>
+              </div>
+            </div>
+            <div class="book-grid">
+              <div class="book-field">
+                <label class="book-label" for="cont-phone-input">Phone <span class="book-opt">(optional)</span></label>
+                <input class="book-input" type="tel" id="cont-phone-input" autocomplete="tel" aria-describedby="cont-phone-input-err">
+                <p class="book-error" id="cont-phone-input-err" hidden></p>
+              </div>
+              <div class="book-field">
+                <label class="book-label" for="cont-topic">Topic</label>
+                <select class="book-select" id="cont-topic">
+                  <option>General question</option>
+                  <option>Help with an appointment</option>
+                  <option>Fees and treatments</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="book-field">
+              <label class="book-label" for="cont-message">Message <span class="book-req" aria-hidden="true">*</span></label>
+              <textarea class="book-textarea" id="cont-message" rows="5" maxlength="1000" placeholder="Write your question here (at least 10 characters)." required aria-describedby="cont-message-err"></textarea>
+              <p class="book-error" id="cont-message-err" hidden></p>
+            </div>
+            <button class="hero-btn hero-btn-primary book-submit" type="submit">Prepare message</button>
+            <p class="book-hint cont-form-legal">This form currently prepares a local preview only; it does not send or save entries. Read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+          </form>
+
+          <div class="book-success cont-msg-success" id="cont-success" role="status" hidden>
+            <div class="book-success-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+            </div>
+            <h3 class="book-success-title" id="cont-success-title" tabindex="-1">Thank you</h3>
+            <p class="book-success-note">Your message preview is ready. It has not been sent or saved.</p>
+            <button class="hero-btn book-btn-dark" type="button" id="cont-again">Write another message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs (from the siteFaqs array in main.js) -->
+    <section class="svc-expect cont-anchor" id="faqs" aria-labelledby="cont-faq-title">
+      <div class="svc-container cont-narrow">
+        <h2 class="svc-heading svc-heading-center" id="cont-faq-title">Frequently asked questions</h2>
+        <div class="tdet-faqs" id="cont-faqs"></div>
+      </div>
+    </section>
+
+    <section class="ctab-section" aria-labelledby="cont-ctab-title">
+      <div class="ctab-card">
+        <div class="ctab-copy">
+          <span class="ctab-eyebrow">YOUR NEXT STEP</span>
+          <h2 class="ctab-title" id="cont-ctab-title">Looking for dental care?</h2>
+          <p class="ctab-text">Organize your preferences before speaking with a dental professional. Your selections stay in your browser and are not sent to a clinic.</p>
+        </div>
+        <div class="ctab-actions">
+          <a class="hero-btn hero-btn-primary" href="book.html">Plan your visit <span aria-hidden="true">→</span></a>
+          <a class="hero-btn hero-btn-outline" href="doctors.html">Find a dentist <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

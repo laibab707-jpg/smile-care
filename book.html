@@ -1,0 +1,184 @@
+<!-- book.html — paste as the FULL file contents (same folder as index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1a2f">
+  <title>Prepare an Appointment Summary | SmileCare</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+  <meta name="description" content="Prepare a local appointment summary using illustrative dentist and treatment information. Nothing is sent to a clinic.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+  <link rel="stylesheet" href="shared-sections.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="pghero-section" aria-labelledby="book-title">
+      <div class="pghero-inner">
+        <nav class="pghero-crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Appointment summary</li>
+          </ol>
+        </nav>
+        <span class="pghero-badge">Local summary tool</span>
+        <h1 class="pghero-title" id="book-title">Prepare an appointment summary</h1>
+        <p class="pghero-text">Use this form to prepare an appointment summary. You do not have to choose a treatment or dentist. Your details are not sent to a clinic.</p>
+      </div>
+    </section>
+
+    <section class="book-section">
+      <div class="book-container">
+
+        <div class="book-emergency" role="note">
+          <svg class="book-emergency-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+          <p><strong>Is this an emergency?</strong> Severe pain, swelling of the face or neck, a knocked-out tooth or bleeding that will not stop need urgent care. Please read our <a href="contact.html#emergency">emergency guidance</a> instead of waiting for an appointment request.</p>
+        </div>
+
+        <div class="book-layout">
+          <div class="book-main">
+            <form class="book-form" id="book-form" novalidate>
+
+              <fieldset class="book-fieldset">
+                <legend class="book-legend"><span class="book-legend-num" aria-hidden="true">1</span>Treatment and dentist</legend>
+                <div class="book-field">
+                  <label class="book-label" for="book-treatment">Treatment <span class="book-opt">(optional)</span></label>
+                  <select class="book-select" id="book-treatment" name="treatment">
+                    <option value="">Not sure yet - I would like advice</option>
+                  </select>
+                  <p class="book-hint">Treatment information is general. Only a dentist can confirm what is right for you. This form does not provide medical advice.</p>
+                </div>
+                <div class="book-grid">
+                  <div class="book-field">
+                    <label class="book-label" for="book-city">Preferred city <span class="book-opt">(optional)</span></label>
+                    <select class="book-select" id="book-city" name="city">
+                      <option value="">Any city</option>
+                    </select>
+                  </div>
+                  <div class="book-field">
+                    <label class="book-label" for="book-doctor">Dentist <span class="book-opt">(optional)</span></label>
+                    <select class="book-select" id="book-doctor" name="doctor">
+                      <option value="">Not sure yet - help me choose</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="book-fieldset">
+                <legend class="book-legend"><span class="book-legend-num" aria-hidden="true">2</span>Preferred date and time</legend>
+                <div class="book-grid">
+                  <div class="book-field">
+                    <label class="book-label" for="book-date">Preferred date <span class="book-req" aria-hidden="true">*</span></label>
+                    <input class="book-input" type="date" id="book-date" name="date" required aria-describedby="book-date-err">
+                    <p class="book-error" id="book-date-err" hidden></p>
+                  </div>
+                  <div class="book-field">
+                    <label class="book-label" for="book-time">Preferred time <span class="book-req" aria-hidden="true">*</span></label>
+                    <select class="book-select" id="book-time" name="time" required aria-describedby="book-time-err">
+                      <option value="">Select a time</option>
+                      <option value="Morning (9am - 12pm)">Morning (9am - 12pm)</option>
+                      <option value="Afternoon (12pm - 4pm)">Afternoon (12pm - 4pm)</option>
+                      <option value="Evening (4pm - 8pm)">Evening (4pm - 8pm)</option>
+                    </select>
+                    <p class="book-error" id="book-time-err" hidden></p>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset class="book-fieldset">
+                <legend class="book-legend"><span class="book-legend-num" aria-hidden="true">3</span>Patient details</legend>
+                <div class="book-field">
+                  <label class="book-label" for="book-for">This appointment is for</label>
+                  <select class="book-select" id="book-for" name="for">
+                    <option value="Myself">Myself</option>
+                    <option value="My child">My child</option>
+                    <option value="Someone else">Someone else</option>
+                  </select>
+                </div>
+                <div class="book-grid">
+                  <div class="book-field">
+                    <label class="book-label" for="book-name">Patient full name <span class="book-req" aria-hidden="true">*</span></label>
+                    <input class="book-input" type="text" id="book-name" name="name" autocomplete="name" required aria-describedby="book-name-err">
+                    <p class="book-error" id="book-name-err" hidden></p>
+                  </div>
+                  <div class="book-field">
+                    <label class="book-label" for="book-phone">Mobile number <span class="book-req" aria-hidden="true">*</span></label>
+                    <input class="book-input" type="tel" id="book-phone" name="phone" autocomplete="tel" placeholder="0300 1234567" required aria-describedby="book-phone-err">
+                    <p class="book-error" id="book-phone-err" hidden></p>
+                  </div>
+                </div>
+                <div class="book-field">
+                  <label class="book-label" for="book-email">Email <span class="book-opt">(optional)</span></label>
+                  <input class="book-input" type="email" id="book-email" name="email" autocomplete="email" aria-describedby="book-email-err">
+                  <p class="book-error" id="book-email-err" hidden></p>
+                </div>
+                <div class="book-field">
+                  <label class="book-label" for="book-notes">Tell us about your concern <span class="book-opt">(optional)</span></label>
+                  <textarea class="book-textarea" id="book-notes" name="notes" rows="4" maxlength="500" placeholder="For example: pain when chewing for 3 days"></textarea>
+                  <p class="book-hint">Please do not include sensitive medical records here. This is not a diagnosis.</p>
+                </div>
+              </fieldset>
+
+              <div class="book-field book-consent-field">
+                <label class="book-check">
+                  <input type="checkbox" id="book-consent" name="consent" required aria-describedby="book-consent-err">
+                  <span>I agree to the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>, and understand this form only creates a local summary. It does not contact a clinic or confirm an appointment.</span>
+                </label>
+                <p class="book-error" id="book-consent-err" hidden></p>
+              </div>
+
+              <button class="hero-btn hero-btn-primary book-submit" type="submit">Prepare appointment summary</button>
+            </form>
+
+            <!-- Shown after a valid submit -->
+            <div class="book-success" id="book-success" hidden>
+              <div class="book-success-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+              </div>
+              <h2 class="book-success-title" id="book-success-title" tabindex="-1">Appointment summary prepared</h2>
+              <p class="book-success-ref">Local summary ID: <strong id="book-ref"></strong></p>
+              <dl class="book-success-list" id="book-success-list"></dl>
+              <p class="book-success-note">This summary is only on this page and has not been sent or saved. Contact a clinic directly to request an appointment.</p>
+              <div class="book-success-actions">
+                <button class="hero-btn hero-btn-primary" type="button" id="book-print">Print summary</button>
+                <button class="hero-btn book-btn-dark" type="button" id="book-again">Prepare another summary</button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="book-aside" aria-label="Your selection and next steps">
+            <div class="book-summary" id="book-summary" aria-live="polite"></div>
+            <div class="book-next">
+              <h2 class="book-next-title">What happens next</h2>
+              <ol class="book-next-list">
+                <li>Complete the form to prepare a summary of your preferences.</li>
+                <li>Your information is not sent or stored by this form.</li>
+                <li>Contact a clinic directly to arrange an actual appointment.</li>
+              </ol>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="svc-expect" aria-labelledby="book-faq-title">
+      <div class="svc-container cont-narrow">
+        <h2 class="svc-heading svc-heading-center" id="book-faq-title">Appointment questions</h2>
+        <div class="tdet-faqs" id="book-faqs"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

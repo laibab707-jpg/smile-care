@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a1a2f">
+  <title>SmileCare | Services</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+  <meta name="description" content="Explore dental services at SmileCare, from checkups to cosmetic treatments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="chatbot.css">
+  <link rel="stylesheet" href="shared-sections.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="page-shell">
+    <section class="page-hero services-page-hero">
+      <div class="page-hero-inner">
+        <span class="eyebrow">OUR SERVICES</span>
+        <h1>Dental treatments for every stage of your smile</h1>
+        <p>Explore general, preventive, restorative, cosmetic, and specialist treatment information. A dentist can assess your needs and explain suitable options.</p>
+        <nav class="service-hero-filters" id="service-treatment-filters" aria-label="Filter treatments by category"></nav>
+        <a class="service-hero-link" href="#treatments">Browse all treatments <span aria-hidden="true">&darr;</span></a>
+      </div>
+    </section>
+
+    <section class="treat-section service-treat-section" id="treatments" aria-labelledby="treatments-heading">
+      <div class="treat-container">
+        <div class="treat-head">
+          <span class="eyebrow accent">Explore treatment options</span>
+          <h2 class="treat-heading" id="treatments-heading">Dental care and treatment information</h2>
+          <p class="treat-subtitle">Treatment descriptions and prices are for general information only. Prices are illustrative estimates, not clinic quotes; confirm current costs and recommendations with a licensed dentist.</p>
+        </div>
+
+        <p class="service-filter-status" id="service-filter-status" role="status" aria-live="polite"></p>
+        <div class="treat-grid" id="service-treatment-grid"></div>
+        <p class="treat-note">Need help deciding? Make a note of your questions before speaking with a dentist, who can examine you and recommend care.</p>
+      </div>
+    </section>
+
+    <section class="info-banner">
+      <div>
+        <span class="eyebrow accent">Your next step</span>
+        <h2>Not sure which treatment is right for you?</h2>
+        <p>Read general information or speak directly with a licensed dental clinic for advice.</p>
+      </div>
+      <a href="book.html" class="primary-cta">Prepare for a consultation</a>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>

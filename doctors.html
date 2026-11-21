@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse SmileCare dentist profiles by name, specialty, and city.">
+  <meta name="theme-color" content="#0a1a2f">
+  <title>Find a Dentist | SmileCare</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦷</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+  <link rel="stylesheet" href="shared-sections.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero short">
+      <div class="page-hero-inner">
+        <span class="eyebrow">DENTIST DIRECTORY</span>
+        <h1>Find a dentist</h1>
+        <p>Search dentist profiles by name, specialty, or city. Provider profiles, availability, locations, and fees are illustrative and have not been verified.</p>
+      </div>
+    </section>
+
+    <section class="directory-section" aria-label="Dentist directory">
+      <div class="directory-filters">
+        <label for="doctor-directory-search">Search dentist profiles
+          <input id="doctor-directory-search" type="search" placeholder="Name, clinic, or area">
+        </label>
+        <label for="doctor-directory-city">City
+          <select id="doctor-directory-city">
+            <option value="">All cities</option>
+          </select>
+        </label>
+        <label for="doctor-directory-specialty">Specialty
+          <select id="doctor-directory-specialty">
+            <option value="">All specialties</option>
+          </select>
+        </label>
+      </div>
+      <p class="directory-result-count" id="doctor-directory-count" aria-live="polite"></p>
+      <div class="directory-grid" id="doctor-directory-grid"></div>
+      <p class="directory-empty" id="doctor-directory-empty" hidden>No profiles match those filters. Try changing your search.</p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
